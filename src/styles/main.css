@@ -1,0 +1,487 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+  }
+  #messageBox{ 
+    margin: 10px 1px 1px 1px;
+    display: flex;
+    justify-content: center;
+    max-height: auto;
+  }
+  
+  img{ 
+    max-width:100%;
+  }
+  
+  .messaging {
+      display: flex;
+      flex-direction: row;
+      max-height: 580px;
+      margin-bottom: 1px;
+  }
+  .inbox_msg {
+    border: 1px solid #c4c4c4;
+    clear: both;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .inbox_people {
+    background: #f8f8f8 none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    width: 30%; 
+    border-right:1px solid #c4c4c4;
+    max-height: 570px;
+  }
+  .top_spac{
+    margin: 20px 0 0;
+  }
+  
+  .recent_heading {
+    display: flex;
+    justify-content: center;
+    width:40%;
+    color: #05728f;
+    margin: auto;
+    font-size: 21px;
+  }
+  .headind_srch{ 
+    display: flex;
+    padding:10px 29px 10px 20px;
+    overflow:hidden;
+    border-bottom:1px solid #c4c4c4;
+  }
+  
+  .search-bar{
+    background-color: #eeeeee;
+    max-width: 100%;
+    text-align: center;
+  }
+  .form-control{
+    max-width: 100%;
+  }
+  .patientName{
+    font-size: 15px;
+    color:#464646;
+    margin:0 0 8px 0;
+  }
+  .msgPreview{
+    font-size:14px;
+    color:#989898;
+    margin:auto;
+  }
+  .chat_ib h5{ 
+    font-size:15px;
+    color:#464646;
+    margin:0 0 8px 0;
+  }
+  .chat_ib p{
+    font-size:14px;
+    color:#989898;
+    margin:auto;
+  }
+  .chatPreview{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .chat_date{
+    font-size: 11px;
+  }
+  .chat_img {
+    float: left;
+    width: 11%;
+  }
+  .chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+  }
+  
+  .chat_people{
+    overflow:hidden;
+    clear:both;
+  }
+  .chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+  }
+  .inbox_chat {
+    height: 500px;
+    overflow-y: scroll;
+  }
+  
+  .active_chat{
+    background:#ebebeb;
+  }
+  
+  .incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+  }
+  .received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 90%;
+   }
+  .received_withd_msg p {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+  }
+  .time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+  }
+  .received_withd_msg {
+    width: 57%;
+  }
+  .mesgs {
+    float: right;
+    width: 70%;
+    height: 100%;
+  }
+
+  .msg_history {
+    padding: 5px 15px 10px 15px;
+    height: 75%;
+    overflow-y: auto;
+  }
+  
+  .navbar {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  #navbarDiv{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-link dropdown-toggle, #navbarDropdownMenuLink{
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .sent_msg p {
+    background: #05728f none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0; color:#fff;
+    padding: 5px 10px 5px 12px;
+    width:100%;
+  }
+  .outgoing_msg{
+    overflow:hidden;
+    margin:26px 0 26px;
+  }
+  .sent_msg {
+    float: right;
+    width: 46%;
+  }  
+  .type_msg {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+    bottom: 0%;
+  }
+  .input_msg_write input {
+    position: relative;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+  
+
+  .msg_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 33px;
+  }
+  
+  
+  @media only screen and (min-width: 1200px){
+    .messaging{
+      max-width: 100%;
+    }
+    #navbarDiv{
+      display: flex;
+      justify-content: space-between;
+    }
+    .inbox_msg{
+      max-width: 100%;
+    }
+    .endResp{
+      display: none;
+    }
+    .spamResp{
+      display: none;
+    }
+    .end{
+      display: contents;
+    }
+    .spam{
+      display: contents;
+    }
+  }
+  
+  @media only screen and (max-width: 1199px){
+    .messaging {
+      max-width: 100%;
+    }
+    #navbarDiv{
+      display: flex;
+      justify-content: space-between;
+    }
+    .inbox_msg{
+      max-width: 100%;
+    }
+    .endResp{
+      display: none;
+    }
+    .spamResp{
+      display: none;
+    }
+    .end{
+      display: contents;
+    }
+    .spam{
+      display: contents;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 800px){
+    .messaging{
+      max-width: 100%;
+    }
+    .inbox_msg{
+      max-width: 100%;
+    }
+    #navbarDiv {
+      display: flex;
+      justify-content: center; 
+    }
+    .nav-link dropdown-toggle, #navbarDropdownMenuLink{
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .endResp{
+      display: none;
+    }
+    .spamResp{
+      display: none;
+    }
+    .end{
+      display: contents;
+    }
+    .spam{
+      display: contents;
+    }
+  }
+  
+  @media (min-width: 500px) and (max-width: 767px){
+    .chat_list {
+      margin: 0;
+      padding: 5px 5px 10px;
+    }
+    .chatPreview{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+    }
+    .msg_history {
+      padding: 0px 10px 10px 10px;
+      height: 510px;
+      overflow-y: auto;
+    }
+    #messageBox{ 
+      margin: 10px 1px 1px 1px;
+      display: flex;
+      justify-content: center;
+    }
+    .messaging{
+      max-width: 100%;
+    }
+    .inbox_msg{
+      max-width: 100%;
+    }
+    #buttons{
+      display: flex;
+      justify-content: center;
+    }
+    #navbarDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+    #navbarNavDropdown{
+      margin: -10px;
+      padding-left: 10%;
+      display: flex;
+      justify-content: center;
+    }
+    .inbox_chat{
+      height: 580px;
+    }
+    .chat.date{
+      font-size: 11px;
+    }
+    .endResp{
+      display: none;
+    }
+    .spamResp{
+      display: none;
+    }
+    .end{
+      display: contents;
+    }
+    .spam{
+      display: contents;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 499px){
+    .recent_heading{
+      font-size: 1.8rem;
+    }
+    .chat_list {
+      border-bottom: 1px solid #c4c4c4;
+      margin: 0;
+      padding: 5px 5px 10px;
+    }
+    .chatPreview{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+    }
+    .patientName{
+      font-size: 14px;
+    }
+    .msgPreview{
+      font-size: 12px;
+    }
+    .msg_history {
+      padding: 0px 10px 10px 10px;
+      height: 450px;
+      overflow-y: auto;
+    }
+    #navbarDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+    #navbarNavDropdown{
+      margin: -10px;
+      padding-left: 10%;
+      display: flex;
+      justify-content: center;
+    }
+    #navbarDropdownMenuLink{
+      font-size: 1.3rem;
+    }
+    .inbox_chat{
+      height: 545px;
+    }
+    .chat.date{
+      font-size: 11px;
+    }
+    .endResp{
+      display: none;
+    }
+    .spamResp{
+      display: none;
+    }
+    .end{
+      display: contents;
+    }
+    .spam{
+      display: contents;
+    }
+  }
+  
+  @media (min-width: 375px) and (max-width: 399px){
+    .recent_heading{
+      font-size: 1.7rem;
+    }
+    #searchBar{
+      font-size: 12px;
+    }
+    .chat_list {
+      border-bottom: 1px solid #c4c4c4;
+      margin: 0;
+      padding: 5px 5px 10px;
+    }
+    .chatPreview{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+    }
+    .patientName{
+      font-size: 13px;
+    }
+    .msgPreview{
+      font-size: 11px;
+    }
+    .msg_history {
+      padding: 0px 10px 10px 10px;
+      height: 450px;
+      overflow-y: auto;
+    }
+    #navbarDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+    #navbarNavDropdown{
+      margin: -10px;
+      padding-left: 10%;
+      display: flex;
+      justify-content: center;
+    }
+    #navbarDropdownMenuLink{
+      font-size: 1.3rem;
+    }
+    .inbox_chat{
+      height: 530px;
+    }
+    .chat.date{
+      font-size: 11px;
+    }
+    .buttonsGroup{
+      padding-left: 0px;
+    }
+    .endResp{
+      display: contents;
+    }
+    .spamResp{
+      display: contents;
+    }
+    .end{
+      display: none;
+    }
+    .spam{
+      display: none;
+    }
+  }
